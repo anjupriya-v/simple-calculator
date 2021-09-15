@@ -10,7 +10,7 @@ $ https://simple-calculator-application.herokuapp.com/
 
 - Redirect to the cloned repo directory
 
-$ cd sample-front-end-website-using-reactjs
+$ cd simple-calculator
 
 - Install the dependencies
 
