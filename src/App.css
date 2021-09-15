@@ -1,0 +1,643 @@
+body {
+    overflow-y: scroll;
+}
+.mainHeading {
+    color: white;
+    font-family: 'Times New Roman';
+}
+td {
+    border: none;
+}
+.mainContent {
+    background-color: rgb(39, 38, 38);
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 3px 3px 4px black;
+}
+.dot {
+    height: 0.5em;
+    width: 0.5em;
+    margin: 1px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+.result {
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+    background-color: rgb(96, 117, 96);
+    border: 1px solid black;
+}
+hr {
+    border: 1px solid black;
+}
+table {
+    border: none;
+    border-collapse: collapse;
+}
+input {
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    background-color: rgb(7, 7, 7);
+    box-shadow: 0 0 7px -1px white;
+    text-align: center;
+    border: 1px solid white;
+}
+.circle {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    border-radius: 50% 50% 50% 50%;
+    outline: none;
+}
+.square {
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+}
+@media (min-width:0px) and (max-width:240px) {
+    .mainContent {
+        width: 14em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 1.5em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+    .result {
+        margin: 0.5em;
+        height: 4em;
+    }
+    hr {
+        margin-top: 1em;
+    }
+    input {
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        font-size: 1em;
+    }
+    .circle {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .square {
+        padding-left: 0.5em;
+        width: 2.5em;
+        padding-right: 0.5em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media (min-width:241px) and (max-width:280px) {
+    .mainContent {
+        width: 15em;
+        margin-bottom: 1em;
+    }
+    .mainHeading {
+        font-size: 1.8em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .result {
+        margin: 0.1em;
+        height: 4em;
+    }
+    hr {
+        margin-top: 1em;
+    }
+    input {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 0.9em;
+    }
+    .circle {
+        padding-left: 1.1em;
+        padding-right: 1.1em;
+    }
+    .square {
+        padding-left: 0.8em;
+        width: 2.5em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 0.8em;
+    }
+    .first {
+        margin-left: 0.01em;
+    }
+    .point {
+        padding-left: 1em;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1em;
+        font-weight: bolder;
+    }
+    .allclear {
+        padding-right: 1.8em;
+    }
+}
+@media (min-width:281px) and (max-width:320px) {
+    .mainContent {
+        width: 17em;
+        margin-bottom: 1em;
+    }
+    .mainHeading {
+        font-size: 2em;
+        padding-top: 0.6em;
+        padding-bottom: 0.5em;
+    }
+    .result {
+        margin: 1em;
+        height: 4.1em;
+    }
+    hr {
+        margin-top: 2em;
+    }
+    input {
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        font-size: 1.04em;
+    }
+    .circle {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .square {
+        padding-left: 0.6em;
+        width: 2.5em;
+        padding-right: 0.6em;
+    }
+    .point {
+        padding-left: 1em;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1em;
+        font-weight: bolder;
+    }
+    .allclear {
+        padding-right: 1.8em;
+    }
+    .first {
+        margin-left: 0.2em;
+    }
+}
+@media (min-width:321px) and (max-width:360px) {
+    .mainContent {
+        width: 20em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 1.7em;
+        padding-top: 0.9em;
+        padding-bottom: 0.9em;
+    }
+    .result {
+        height: 5em;
+        margin: 1em;
+        width: 16em
+    }
+    hr {
+        margin-top: 1.7em;
+    }
+    .first {
+        margin-left: 0.4em;
+    }
+    input {
+        margin-left: 0.38em;
+        margin-right: 0.38em;
+        margin-top: 0.44em;
+        margin-bottom: 0.44em;
+        background-color: white;
+        font-size: 1.3em;
+    }
+    .circle {
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
+    .square {
+        padding-left: 0.4em;
+        width: 2.5em;
+        padding-right: 0.4em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .point {
+        padding-left: 1em;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1em;
+        font-weight: bolder;
+    }
+}
+@media (min-width:361px) and (max-width:384px) {
+    .mainContent {
+        width: 21.5em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 2.2em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+    .result {
+        margin: 1em;
+        height: 5.5em;
+    }
+    hr {
+        margin-top: 2em;
+    }
+    input {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        font-size: 1.2em;
+    }
+    .first {
+        margin-left: 1.1em;
+    }
+    .circle {
+        padding-left: 0.9em;
+        padding-right: 0.9em;
+    }
+    .square {
+        padding-left: 0.6em;
+        width: 2.5em;
+        padding-right: 0.6em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .point {
+        padding-left: 1.1em;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1.1em;
+        font-weight: bolder;
+    }
+}
+@media (min-width:385px) and (max-width:414px) {
+    .mainContent {
+        width: 21.5em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 2.2em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+    .result {
+        margin: 1em;
+        height: 5.5em;
+    }
+    hr {
+        margin-top: 2em;
+    }
+    input {
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        font-size: 1.3em;
+    }
+    .first {
+        margin-left: 1em;
+    }
+    .circle {
+        padding-left: 0.9em;
+        padding-right: 0.9em;
+    }
+    .square {
+        padding-left: 0.6em;
+        width: 2.5em;
+        padding-right: 0.6em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .point {
+        padding-left: 1.1em;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1.1em;
+        font-weight: bolder;
+    }
+}
+@media (min-width:414px) and (max-width:480px) {
+    .mainContent {
+        width: 21.5em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 2.2em;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+    }
+    .result {
+        margin: 1em;
+        height: 5.5em;
+    }
+    hr {
+        margin-top: 2em;
+    }
+    input {
+        margin-left: 0.45em;
+        margin-right: 0.45em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        font-size: 1.2em;
+    }
+    .first {
+        margin-left: 1.5em;
+    }
+    .circle {
+        padding-left: 0.9em;
+        padding-right: 0.9em;
+    }
+    .square {
+        padding-left: 0.7em;
+        width: 2.3em;
+        padding-right: 0.7em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .allclear {
+        padding-right: 1.8em;
+    }
+    .point {
+        padding-left: 1em;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1em;
+        font-weight: bolder;
+    }
+}
+@media (min-width:481px) and (max-width:600px) {
+    .mainContent {
+        width: 23em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 2.4em;
+        padding-top: 0.8em;
+        padding-bottom: 0.9em;
+    }
+    .result {
+        margin: 1em;
+        height: 5em;
+    }
+    hr {
+        margin-top: 1.5em;
+    }
+    input {
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        font-size: 1.3em;
+    }
+    .first {
+        margin-left: 1.4em;
+    }
+    .circle {
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
+    .square {
+        padding-left: 0.5em;
+        width: 2.2em;
+        padding-right: 0.5em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .allclear {
+        padding-right: 1.8em;
+    }
+    .point {
+        padding-left: 1em;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1em;
+        font-weight: bolder;
+    }
+}
+@media (min-width:601px) and (max-width:720px) {
+    .mainContent {
+        width: 23em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 2.4em;
+        padding-top: 0.8em;
+        padding-bottom: 0.9em;
+    }
+    .result {
+        margin: 1em;
+        height: 5em;
+    }
+    hr {
+        margin-top: 2em;
+    }
+    input {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        font-size: 1.3em;
+    }
+    .first {
+        margin-left: 1.27em;
+    }
+    .circle {
+        padding-left: 0.9em;
+        padding-right: 0.9em;
+    }
+    .point {
+        padding-left: 1.1em;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1.1em;
+        font-weight: bolder;
+    }
+    .square {
+        padding-left: 0.7em;
+        width: 2.5em;
+        padding-right: 0.7em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media (min-width:721px) and (max-width:1024px) {
+    .mainContent {
+        width: 21.8em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 2.4em;
+        padding-top: 0.8em;
+        padding-bottom: 0.7em;
+    }
+    .result {
+        height: 5em;
+        margin: 1em;
+    }
+    hr {
+        margin-top: 1.5em;
+    }
+    input {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        font-size: 1.3em;
+    }
+    .first {
+        margin-left: 1.2em;
+    }
+    .circle {
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
+    .square {
+        border-radius: 10px 10px 10px 10px;
+        padding-left: 0.8em;
+        width: 2.3em;
+        font-size: larger;
+        padding-right: 1em;
+        outline: none;
+    }
+    .allclear {
+        padding-right: 1.5em;
+        padding-left: 0.4em;
+    }
+    .point {
+        padding-left: 1em;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1em;
+        font-weight: bolder;
+    }
+}
+@media (min-width:1025px) and (max-width:1440px) {
+    .mainContent {
+        width: 24em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 2.9em;
+        padding-top: 0.6em;
+        padding-bottom: 0.8em;
+    }
+    .result {
+        margin: 1em;
+        height: 5.2em;
+    }
+    hr {
+        margin-top: 2em;
+    }
+    input {
+        margin-left: 0.68em;
+        margin-right: 0.68em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        font-size: 1.2em;
+    }
+    .first {
+        margin-left: 1.25em;
+    }
+    .circle {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .square {
+        padding-left: 0.8em;
+        width: 2.5em;
+        padding-right: 0.8em;
+    }
+    .point {
+        padding-left: 1m;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1.1em;
+        font-weight: bolder;
+    }
+    .allclear {
+        padding-right: 1.8em;
+    }
+    td {
+        letter-spacing: 1px;
+    }
+}
+@media (min-width:1441px) {
+    .mainContent {
+        width: 24em;
+        margin-bottom: 2em;
+    }
+    .mainHeading {
+        font-size: 2.9em;
+        padding-top: 0.6em;
+        padding-bottom: 0.8em;
+    }
+    .dot {
+        height: 0.5em;
+        width: 0.5em;
+        margin: 1px;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .result {
+        margin: 1em;
+        height: 5.2em;
+    }
+    hr {
+        margin-top: 2em;
+    }
+    input {
+        margin-left: 0.68em;
+        margin-right: 0.68em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        font-size: 1.2em;
+    }
+    .first {
+        margin-left: 1.25em;
+    }
+    .circle {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .square {
+        padding-left: 0.8em;
+        width: 2.5em;
+        padding-right: 0.8em;
+    }
+    .point {
+        padding-left: 1m;
+        padding-bottom: 0.2em;
+        padding-top: 0em;
+        padding-right: 1.1em;
+        font-weight: bolder;
+    }
+    .allclear {
+        padding-right: 1.8em;
+    }
+    td {
+        letter-spacing: 1px;
+    }
+}
+#display-value {
+    text-align: right;
+    flex: 0 0 auto;
+    overflow-wrap: normal;
+}
+.display {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.display::-webkit-scrollbar {
+    display: none;
+}
