@@ -6,7 +6,7 @@ $ https://simple-calculator-application.herokuapp.com/
 
 - Clone the repository
 
-git clone https://github.com/anjupriya-v/simple-calculator.git
+$ git clone https://github.com/anjupriya-v/simple-calculator.git
 
 - Redirect to the cloned repo directory
 
