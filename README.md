@@ -10,8 +10,6 @@ $ git clone https://github.com/anjupriya-v/simple-calculator.git
 
 - Redirect to the cloned repo directory
 
-$ cd simple-calculator
-
 - Install the dependencies
 
 `npm install`
